@@ -18,7 +18,9 @@ const Header = () => {
   return (
     <header>
       <h2>Expendify</h2>
-      <button onClick={openModal}>What is this app about?</button>
+      <button onClick={openModal} className="about-btn">
+        What is this app about?
+      </button>
       <AboutModal ref={modalRef} onClose={closeModal} />
     </header>
   );

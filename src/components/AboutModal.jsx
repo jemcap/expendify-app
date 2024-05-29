@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 const AboutModal = forwardRef((props, ref) => {
   return (
-    <dialog ref={ref} className="modal" style={{ display: "none" }}>
+    <dialog ref={ref} className="modal">
       <div className="modal-content">
         <h1>What is Expendify</h1>
         <p>
