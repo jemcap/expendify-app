@@ -3,11 +3,12 @@ import Header from "./components/Header";
 import NewTransaction from "./components/NewTransaction";
 import TransactionActivity from "./components/TransactionActivity";
 import TransactionsContainer from "./components/TransactionsContainer";
+import { GlobalProvider } from "./context/GlobalState";
 import "./index.css";
 
 function App() {
   return (
-    <main>
+    <GlobalProvider>
       <Header />
       <div id="container">
         <Balance />
@@ -15,7 +16,7 @@ function App() {
         <TransactionActivity />
         <NewTransaction />
       </div>
-    </main>
+    </GlobalProvider>
   );
 }
 
