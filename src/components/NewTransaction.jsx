@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NewTransaction = () => {
+  const [formData, setFormData] = useState({
+    text: "",
+    amount: "",
+  });
+
+  // function handleAddTransaction() = {
+  //   setFormData((prevData) => {
+  //     return {
+  //       ...prevData,
+  //       text: text,
+
+  //     }
+  //   })
+  // }
   return (
     <>
       <h3>Add new transaction</h3>
