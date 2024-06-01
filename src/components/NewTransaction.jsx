@@ -20,15 +20,16 @@ const NewTransaction = () => {
       <h3>Add new transaction</h3>
       <form id="form">
         <div className="form-control">
-          <label htmlFor="text">Text</label>
-          <input type="text" id="text" placeholder="Enter text..." />
+          <label htmlFor="text">Item</label>
+          <input type="text" id="text" placeholder="Enter item..." />
         </div>
         <div className="form-control">
-          <label htmlFor="amount">
-            Amount <br />
-            (negative - expense, positive - income)
-          </label>
-          <input type="number" id="amount" placeholder="Enter amount..." />
+          <label htmlFor="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount... e.g., -250"
+          />
         </div>
 
         <button className="btn">Add transaction</button>
